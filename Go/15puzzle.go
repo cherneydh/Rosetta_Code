@@ -30,9 +30,9 @@
 package main
 
 import ("fmt"
-		"math/rand"
-		"os"
-		"os/exec"
+	"math/rand"
+	"os"
+	"os/exec"
 )
 
 var board = [16]string{"0","0","0","0","0","0","0","0","0","0","0","0",
@@ -184,8 +184,8 @@ func printboard(){
 
 func clear(){
 		c:=exec.Command("clear") // This function resets terminal to keep it clean
-		c.Stdout=os.Stdout		 // If you aren't on linux, comment this out
-		c.Run()					 // It will print newlines instead of clearing terminal
+		c.Stdout=os.Stdout       // If you aren't on linux, comment this out
+		c.Run()			 // It will print newlines instead of clearing terminal
 }		
 
 func main(){
