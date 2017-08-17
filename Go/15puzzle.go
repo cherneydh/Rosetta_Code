@@ -33,6 +33,7 @@ import ("fmt"
 	"math/rand"
 	"os"
 	"os/exec"
+	"time"
 )
 
 var board = [16]string{"0","0","0","0","0","0","0","0","0","0","0","0",
@@ -189,6 +190,7 @@ func clear(){
 }		
 
 func main(){
+	rand.Seed(time.Now().UTC().UnixNano())
 	var game_over = false
 	buildboard()
 	
