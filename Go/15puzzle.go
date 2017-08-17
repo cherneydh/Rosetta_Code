@@ -1,5 +1,5 @@
 /*
- * compiler.c
+ * 15puzzle.go
  * 
  * Copyright 2017 Daniel github: @cherneydh
  * 
